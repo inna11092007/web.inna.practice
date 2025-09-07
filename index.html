@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer Portfolio</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <!-- Header -->
+ <header class="header">
+  <div class="container header-container">
+    <!-- Логотип -->
+    <div class="logo">DAMIEN</div>
+
+    <!-- Основна навігація -->
+   <nav class="nav">
+  <ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Services</a></li>
+  </ul>
+</nav>
+
+
+    <!-- Кнопка -->
+    <a href="#" class="btn">Contact Me</a>
+
+    <!-- Бургер -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Мобільне меню -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#" class="btn-mobile">Contact Me</a></li>
+    </ul>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-left">
+        <p class="subtitle">STUNNING PHOTOGRAPHY BY</p>
+        <h1>DAMIEN BRAUN</h1>
+      </div>
+      <div class="hero-right">
+        <div class="lets-row">
+          <p class="hero-line">LET’S</p>
+          <img src="assets/immages/Button.png" alt="arrow" class="lets-icon">
+        </div>
+        <p class="work-text">WORK TOGETHER</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="categories-container">
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> EVENT PHOTOGRAPHY</a>
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> COMMERCIAL PHOTOGRAPHY</a>
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> PRODUCT PHOTOGRAPHY</a>
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> WEDDING PHOTOGRAPHY</a>
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> LANDSCAPE PHOTOGRAPHY</a>
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> BRANDING PHOTOGRAPHY</a>
+      <a href="#" class="category-item"><img src="assets/immages/star.png" alt=""> PORTRAIT PHOTOGRAPHY</a>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="container gallery-container">
+      <img src="assets/immages/home.png" alt="My work">
+    </div>
+  </section>
+
+  <script>
+  const burger = document.getElementById('burger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  burger.addEventListener('click', () => {
+    mobileNav.classList.toggle('show');
+
+    if (mobileNav.classList.contains('show')) {
+      mobileNav.style.display = 'block';
+      burger.classList.add('active');
+    } else {
+      mobileNav.style.display = 'none';
+      burger.classList.remove('active');
+    }
+  });
+</script>
+
+</body>
+</html>
